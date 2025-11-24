@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- AOS CSS ANIMATIONSSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <!--<meta charset="UTF-8">-->
+  <title>Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!--STYLE FOR OVERLAP IMAGE-->
+    <style>
+      img {
+      margin-top: -30px;
+      transform: scale(1.1);
+      }
+    </style>
+</head>
+<body>
+  <div id="top"></div>  <!-- TOP ID-->
+
+  <!-- Navigation barrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SkyBound</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Content</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bottom">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bottom">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--NEW QUOTE-->
+
+<header>
+    <div class="jumbotron p-3 p-md-5 text-white bg-dark d-flex justify-content-between align-items-center"
+        style="
+            background-image: url('bg2.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        ">
+        
+        <!-- HEADER CONTENT -->
+        <div class="col-md-9 px-0">
+            <h1 class="display-4 font-italic" style="font-size: 42px; margin-top: 17px;">
+                🌌 The Wonders of Our Solar System
+            </h1>
+            <p class="lead my-3" style="font-size: 20px;">
+                "You are a child of the universe, no less than the trees and the stars; you have a right to be here."
+            </p>
+            <h2>
+            <p class="lead mb-0">
+                — Max Ehrmann<br><br><br>
+            </p>
+            </h2>
+        </div>
+    </div>
+</header>
+
+<!-- SUN CARD -->
+<section class="text-body-secondary pb-5" 
+style="
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+">
+
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- IMAGE (hidden on mobile) -->
+      <div class="col-12 col-lg-4 d-none d-md-flex justify-content-center">
+        <img src="star.png" alt="sun" class="img-fluid" style="max-height: 350px;">
+      </div>
+
+      <!-- TEXT -->
+      <div class="col-12 col-lg-8 text-light planet-text">
+        <h6 class="display-6 text-center" style="font-size: 31px;">
+          The Sun
+        </h6>
+        <p class="lead" data-aos="fade-left">
+          The Sun is the massive, glowing star at the center of our solar system, 
+          composed primarily of hydrogen and helium. Through nuclear fusion, it converts 
+          hydrogen into helium, releasing enormous energy that provides heat and light 
+          essential for life on Earth. Formed about 4.6 billion years ago, the Sun’s 
+          gravity governs the orbits of all planets, dwarf planets, asteroids, and comets. 
+          Its outer layers produce the visible light and solar wind, while sunspots and 
+          solar flares reveal dynamic magnetic activity. As the heart of the solar system, 
+          the Sun shapes the environment and conditions for all surrounding worlds.
+        </p>
+        <p class="lead mb-0">
+          <a href="#" class="text-light font-weight-bold" 
+             onclick="event.preventDefault(); openPlanetModal('Our Sun', sunInfo)"  
+             data-aos="fade-left">
+            Continue reading...
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- MERCURY CARD -->
+<section class="text-body-secondary pb-5" style="background-color: bisque;">
+
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- TEXT -->
+      <div class="col-12 col-lg-8 planet-text">
+        <h6 class="display-6 text-center" style="font-size: 31px; margin-top: 19px;">
+          Mercury
+        </h6>
+
+        <p class="lead" data-aos="fade-right">
+          Mercury is the smallest planet and the one closest to the Sun, racing around
+          it faster than any other world. Its surface is scorched by daytime heat and frozen by night,
+          with no atmosphere to protect it. Quiet, rocky, ancient—Mercury is a planet of extremes.
+        </p>
+
+        <p class="lead mb-0">
+          <a href="#" class="text-dark font-weight-bold"
+            onclick="event.preventDefault(); openPlanetModal('Mercury', mercuryInfo)"
+            data-aos="fade-right">
+            Continue reading...
+          </a>
+        </p>
+      </div>
+
+      <!-- IMAGE: hidden on mobile -->
+      <div class="col-12 col-lg-4 d-none d-md-flex justify-content-center">
+        <img src="mercury.png" alt="Mercury" class="img-fluid" style="max-height: 280px;">
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- VENUS CARD -->
+<section class="text-body-secondary pb-5" style="background-color: rgb(215, 210, 204);">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- IMAGE (hidden on mobile) -->
+      <div class="col-12 col-lg-4 d-none d-md-flex justify-content-center">
+        <img src="venus.png" class="img-fluid" alt="Venus" style="max-height: 280px;">
+      </div>
+
+      <!-- TEXT -->
+      <div class="col-12 col-lg-8 planet-text">
+        <h6 class="display-6 text-center" style="font-size: 31px; margin-top: 19px;">
+          Venus
+        </h6>
+
+        <p class="lead" data-aos="fade-left">
+          Venus is the planet of thick clouds and crushing heat, its surface hotter than any other world. 
+          Beneath its golden atmosphere lie mountains, plains, and ancient volcanoes. 
+          Though similar in size to Earth, Venus is wildly different—bright, beautiful, 
+          and dangerously hostile, a glowing twin in our evening sky.
+        </p>
+
+        <p class="lead mb-0">
+          <a href="#" class="text-dark font-weight-bold"
+             onclick="event.preventDefault(); openPlanetModal('Venus', venusInfo)"
+             data-aos="fade-left">
+            Continue reading...
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EARTH CARD -->
+<section class="text-body-secondary pb-5" style="background-color: rgb(35, 98, 6);">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- TEXT -->
+      <div class="col-12 col-lg-8 planet-text">
+        <h6 class="display-6 text-center text-white" style="font-size: 31px; margin-top: 19px;">
+          Earth
+        </h6>
+
+        <p class="lead text-white" data-aos="fade-right">
+          Earth is the only known world to cradle life, wrapped in blue oceans, drifting clouds, 
+          and shifting continents. Its atmosphere shields and nurtures, while rich ecosystems cover 
+          land and sea. Ever-changing yet beautifully balanced, Earth remains the solar system’s  
+          rare and remarkable oasis.
+        </p>
+
+        <p class="lead mb-0">
+          <a href="#" class="font-weight-bold text-white"
+             onclick="event.preventDefault(); openPlanetModal('Earth', earthInfo)"
+             data-aos="fade-right">
+            Continue reading...
+          </a>
+        </p>
+      </div>
+
+      <!-- IMAGE (hidden on mobile) -->
+      <div class="col-12 col-lg-4 d-none d-md-flex justify-content-center">
+        <img src="earth.png" class="img-fluid" alt="Earth" style="max-height: 280px;">
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- MARS CARD -->
+<section class="text-body-secondary pb-5" style="background-color: rgb(232, 193, 193);">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- IMAGE (hidden on mobile) -->
+      <div class="col-12 col-lg-4 d-none d-md-flex justify-content-center pt-5">
+        <img src="mars.png" class="img-fluid w-100" alt="Mars" style="max-height: 300px; object-fit: cover;">
+      </div>
+
+      <!-- TEXT -->
+      <div class="col-12 col-lg-8 planet-text">
+        <h6 class="display-6 text-center" style="font-size: 31px; margin-top: 19px;">
+          Mars
+        </h6>
+        <p class="lead" data-aos="fade-left">
+          Mars is a cold, dusty world shaped by ancient volcanoes, canyons, and storms of red sand.
+          Once home to flowing water, and still holds ice beneath its surface. 
+          With thin air and freezing nights, Mars remains a rugged frontier, 
+          a place that tempts scientists and dreamers alike.
+        </p>
+        <p class="lead mb-0">
+          <a href="#" class="text-dark font-weight-bold" 
+             onclick="event.preventDefault(); openPlanetModal('Mars', marsInfo)" 
+             data-aos="fade-left">
+            Continue reading...
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- JUPITER CARD -->
+<section class="text-body-secondary pb-5" style="background-color: rgb(96, 101, 94);">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- TEXT FIRST -->
+      <div class="col-12 col-lg-8 planet-text">
+        <h6 class="display-6 text-center text-white" style="font-size: 31px; margin-top: 19px;">
+          Jupiter
+        </h6>
+        <p class="lead text-white mx-3" data-aos="fade-right">
+          Jupiter is the largest planet in our solar system, a gas giant composed mainly of hydrogen and helium. 
+          Its size gives it a powerful gravitational pull that affects the orbits of other planets 
+          and even captures asteroids as temporary moons. Jupiter has dozens of moons, including the four 
+          large Galilean moons, each unique in its features. 
+          One striking feature is the Great Red Spot, a massive, centuries-old storm, with cloud bands that 
+          swirl across its atmosphere. 
+        </p>
+        <p class="lead mx-3">
+          <a href="#" class="text-dark font-weight-bold text-white" 
+             onclick="event.preventDefault(); openPlanetModal('Jupiter', jupiterInfo)" 
+             data-aos="fade-right">
+            Continue reading...
+          </a>
+        </p>
+      </div>
+
+      <!-- IMAGE (hidden on mobile) -->
+      <div class="col-12 col-lg-4 d-none d-md-flex justify-content-center">
+        <img src="jupiter.png" class="img-fluid w-100" alt="Jupiter" style="max-height: 391px; object-fit: cover;">
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- SATURN CARD -->
+<section class="text-body-secondary pb-5" style="background-color: rgb(0, 0, 0);">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- IMAGE (hidden on mobile) -->
+      <div class="col-12 col-lg-5 d-none d-md-flex justify-content-center">
+        <img src="saturn.png" class="img-fluid w-100" alt="Saturn" style="max-height: 300px; object-fit: cover;">
+      </div>
+
+      <!-- TEXT -->
+      <div class="col-12 col-lg-7 planet-text">
+        <h6 class="display-6 text-center text-white" style="font-size: 31px; margin-top: 19px;">
+          Saturn
+        </h6>
+        <p class="lead text-white mx-3" data-aos="fade-left">
+          Saturn is the second-largest planet in our solar system, known for its spectacular 
+          rings made of ice and rock. Mostly composed of hydrogen and helium, 
+          it has dozens of moons, including Titan, which is larger than Mercury. 
+          Saturn’s low density would allow it to float in water if a giant ocean existed.
+        </p>
+        <p class="lead mx-3">
+          <a href="#" class="text-dark font-weight-bold text-white" 
+             onclick="event.preventDefault(); openPlanetModal('Saturn', saturnInfo)" 
+             data-aos="fade-left">
+            Continue reading...
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- URANUS CARD -->
+<section class="text-body-secondary pb-5" style="background-color: rgb(97, 99, 123);">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- TEXT FIRST -->
+      <div class="col-12 col-lg-8 planet-text">
+        <h6 class="display-6 text-center text-white pt-5" style="font-size: 31px; margin-top: 19px;">
+          Uranus
+        </h6>
+        <p class="lead text-white mx-3" data-aos="fade-right">
+          Uranus is the seventh planet from the Sun, an icy giant composed mainly of hydrogen, 
+          helium, and ices such as water, ammonia, and methane. Its striking blue-green color 
+          comes from methane in the atmosphere. Unlike other planets, Uranus rotates on its side, 
+          causing extreme seasons. It has a faint ring system and dozens of moons, including Titania 
+          and Oberon. Its pale blue-green hue, caused by methane in the atmosphere, gives 
+          Uranus a distinctive appearance.
+        </p>
+        <p class="lead mx-3">
+          <a href="#" class="text-dark font-weight-bold text-white" 
+             onclick="event.preventDefault(); openPlanetModal('Uranus', uranusInfo)" 
+             data-aos="fade-right">
+            Continue reading...
+          </a>
+        </p>
+      </div>
+
+      <!-- IMAGE (hidden on mobile) -->
+      <div class="col-12 col-lg-4 d-none d-md-flex justify-content-center">
+        <img src="uranus.png" class="img-fluid w-100" alt="Uranus" style="max-height: 410px; object-fit: cover;">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- NEPTUNE CARD -->
+<section class="text-body-secondary pb-5" style="background-color: rgb(21, 26, 123);">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- IMAGE (hidden on mobile) -->
+      <div class="col-12 col-lg-4 d-none d-md-flex justify-content-center">
+        <img src="neptune.png" class="img-fluid w-100" alt="Neptune" style="max-height: 410px; object-fit: cover;">
+      </div>
+
+      <!-- TEXT -->
+      <div class="col-12 col-lg-8 planet-text">
+        <h6 class="display-6 text-center text-white" style="font-size: 31px; margin-top: 19px;">
+          Neptune
+        </h6>
+        <p class="lead text-white" data-aos="fade-left">
+          Neptune is the eighth planet from the Sun, an icy giant composed mainly of hydrogen, 
+          helium, and methane, which gives it a vivid deep blue color. Known for supersonic winds—the 
+          fastest in the solar system—Neptune has a faint ring system and 14 known moons, including Triton. 
+          Its dynamic atmosphere features storms and dark spots, and its great distance from the Sun makes 
+          it a cold, mysterious world.
+        </p>
+        <p class="lead mb-0">
+          <a href="#" class="text-white" 
+             onclick="event.preventDefault(); openPlanetModal('Neptune', neptuneInfo)" 
+             data-aos="fade-left">
+            Continue reading...
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+          <!-- PLUTO CARD -->
+<section class="text-body-secondary pb-5" style="background-color: rgb(196, 151, 151);">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- TEXT FIRST -->
+      <div class="col-12 col-lg-8 planet-text">
+        <h6 class="display-6 text-center text-light" style="font-size: 31px; margin-top: 19px;">
+          Pluto (dwarf planet)
+        </h6>
+        <p class="lead text-light" data-aos="fade-right">
+          Pluto is a tiny, icy world on the outskirts of the solar system, drifting through the Kuiper Belt in a long, 
+          stretched-out orbit. Once considered the ninth planet, it’s now classified as a dwarf planet, 
+          home to frozen plains, mountains of solid water ice, and a thin, hazy atmosphere. Though distant and dim, 
+          Pluto remains one of the most mysterious and beloved objects in our cosmic neighborhood.
+        </p>
+        <p class="lead mb-0">
+          <a href="#" class="text-light font-weight-bold" 
+             onclick="event.preventDefault(); openPlanetModal('Pluto', plutoInfo)" 
+             data-aos="fade-right">
+            Continue reading...
+          </a>
+        </p>
+      </div>
+
+      <!-- IMAGE (hidden on mobile) -->
+      <div class="col-12 col-lg-4 d-none d-md-flex justify-content-center">
+        <img src="pluto.png" class="img-fluid w-100" alt="Pluto" style="max-height: 400px; object-fit: cover;">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="container-fluid text-light" style="background-image: url('bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+  <section class="container py-5 text-left" style="line-height: 1.2;">
+    <h2>About This Site</h2>
+    <br>This website is designed to provide educational information about the solar system. Aiming to make learning about space engaging.
+    <br><strong>Content Assistance:</strong> Some descriptions were generated with AI to ensure clarity and accuracy.
+    <br><strong>Sources:</strong> NASA, ESA, and other reputable astronomical references.
+    <br><strong>Contact:</strong>vimukthinethmina2580@gmail.com</p>
+    <hr style="border-color: rgba(255,255,255,0.3);">
+  </section>
+</section>
+    </div>
+  </footer>
+</section>
+
+
+<footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 SkyBound</p>
+  </footer-->
+
+
+<!--  JS link -->
+  <script src="script.js"></script>
+<!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+  <!--BOTTOM ID-->
+    <div id="bottom"></div>
+ <!--HOVER TO TOP BUTTON-->
+      <a href="#top" class="btn btn-primary back-to-top">↑</a>
+  
+<!--POP-UP-->
+<!-- Planet Info Modal -->
+<div class="modal fade" id="planetModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content text-light">
+      <div class="modal-header text-light">
+        <h5 class="modal-title" id="planetModalTitle">Planet Title</h5>
+        <!-- CLOSE BUTTON -->
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-start" id="planetModalContent">
+        Planet details will appear here...
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--SORTING-->
+<script>
+document.querySelectorAll(".sort-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        const sortType = btn.getAttribute("data-sort");
+
+        // Select all planet divs
+        let planets = Array.from(document.querySelectorAll(".planet"));
+
+        // Sort them
+        planets.sort((a, b) => {
+            const valA = parseFloat(a.getAttribute("data-" + sortType));
+            const valB = parseFloat(b.getAttribute("data-" + sortType));
+            return valA - valB;
+        });
+
+        // Re-append to container
+        const container = document.getElementById("planet-container");
+        planets.forEach(p => container.appendChild(p));
+    });
+});
+</script>
+
+
+</body>
+</html>
